@@ -1,0 +1,55 @@
+{
+    "name": "View Sub Youtube",
+    "description": "View Sub Youtube",
+    "version": "1.0.2",
+    "manifest_version": 2,
+    "icons": {
+        "16": "images/logo_akuradio.png",
+        "48": "images/logo_akuradio.png",
+        "128": "images/logo_akuradio.png"
+    },
+    "web_accessible_resources": [
+        "images/*"
+    ],
+    "background": {
+        "scripts": [
+            "libs/jquery/jquery-3.5.1.min.js",
+            "js/define/accounts.js",
+            "js/define/define.js",
+            "js/background/background.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "images/logo_akuradio.png",
+            "38": "images/logo_akuradio.png"
+        },
+        "default_title": "Aotu Youtube View Video",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "css/content/content.css"
+            ],
+            "js": [
+                "libs/jquery/jquery-3.5.1.min.js",
+                "js/content/jquery.autotype.js",
+                "js/define/define.js",
+                "js/content/content.js"
+            ]
+        }
+    ],
+    "options_page": "options.html",
+    "permissions": [
+        "tabs",
+        "storage",
+        "unlimitedStorage",
+        "history",
+        "browsingData",
+        "topSites"
+    ]
+}

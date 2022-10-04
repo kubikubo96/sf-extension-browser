@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auto SB Youtube</title>
+
+    <link rel="stylesheet" href="css/popup/popup.css">
+</head>
+<body>
+    <div class="popup-group">
+        <div class="box-data">
+            <h3 class="box-title">Key API</h3>
+            <div class="box-getapi">
+                <input type="text" id="value-keyapi" class="form-control" placeholder="Nhập Key API của bạn..." value="">
+            </div>
+        </div>
+
+        <div class="box-data">
+            <h3 class="box-title">I. Đồng Bộ Trang Tính (Google Sheet) Và Khởi Chạy</h3>
+            <div class="box-getapi">
+                <input type="text" id="value-ipserver" class="form-control" placeholder="Địa Chỉ IP Server Trên Google Sheet...">
+            </div>
+
+            <button id="btn-getip" class="gradient-button gradient-button-blue">Đồng Bộ Và Khởi Chạy</button>
+        </div>
+
+        <div class="box-data">
+            <h3 class="box-title">II. Khởi Chạy Thủ Công</h3>
+            <button id="btn-runvideo" class="gradient-button gradient-button-blue">Khởi Chạy Thủ Công</button>
+            <br><br>
+            <p class="msg">Chuột phải vào biệu tượng tiện ích của Tool rồi chọn Tùy Chọn (Options) để cấu hình tiện ích.</p>
+        </div>
+
+        <div class="box-data">
+            <button id="btn-cancel" class="gradient-button gradient-button-red">Mặc Định</button>
+            <button id="btn-resetlogin" class="gradient-button gradient-button-red">Mặc Định + Reset Login</button>
+        </div>
+
+        <div class="result"></div>
+    </div>
+
+    <script type="text/javascript" src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/define/define.js"></script>
+    <script type="text/javascript" src="js/popup/popup.js"></script>
+</body>
+</html>
